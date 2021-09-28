@@ -21,13 +21,13 @@ public class Conditions{
         }
     return 0;
     }    
-    
+
      public static float getRostInt() {
         System.out.println(" Choose your height:");
         float rost;
         if(scanner.hasNextFloat() ){
         rost = scanner.nextFloat();
-            if(rost > 1.80f){
+            if(rost > 180f){
             System.out.println("Jiraf");    
             } else {
             System.out.println("korotyshka");
