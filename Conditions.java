@@ -40,8 +40,8 @@ public class Conditions{
     public static String getNameStr(){
         System.out.println("Choose your name:");
         String name;
-        if(scanner.hasNext()){
-            name = scanner.nextLine();
+        if(scanner.hasNextLine()){
+            name = scanner.next();
             System.out.println("Your name lol:"+ name);
         }else {
             System.out.println("Smotri 4to ty pishesh!!!!");
