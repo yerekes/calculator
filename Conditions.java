@@ -12,28 +12,28 @@ public class Conditions{
         System.out.println(" Choose your age:");
         int j;
         if(scanner.hasNextInt() ){
-        j = scanner.nextInt();
+            j = scanner.nextInt();
             if(j > 20){
-            System.out.println("Starik");
+                System.out.println("Starik");
             } else {
-            System.out.println("Molodoy brariska");
+                System.out.println("Molodoy brariska");
             }
         }
-    return 0;
+        return 0;
     }    
 
      public static float getRostInt() {
         System.out.println(" Choose your height:");
         float rost;
         if(scanner.hasNextFloat() ){
-        rost = scanner.nextFloat();
+            rost = scanner.nextFloat();
             if(rost > 180f){
-            System.out.println("Jiraf");    
+                System.out.println("Jiraf");    
             } else {
-            System.out.println("korotyshka");
+                System.out.println("korotyshka");
             }     
         }
-    return 0;
+        return 0;
     }  
 }
 
