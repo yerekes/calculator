@@ -24,7 +24,7 @@ public class Conditions{
         return 0;
     }    
 
-     public static float getRostInt() {
+    public static float getRostInt() {
         System.out.println(" Choose your height:");
         float rost;
         if(scanner.hasNextFloat() ){
