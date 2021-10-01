@@ -35,7 +35,6 @@ public class Calculator {
             default:
             System.out.println("OPerciya ne raspoznanana");
             result = calc(num1,num2,getOperation());
-
         }
         return result;
     }
@@ -76,7 +75,7 @@ public class Calculator {
             operation = getOperation();
             System.out.println("vvedi Pravil'nee!!!");
     }
-    return operation;
+        return operation;
     }
     
 }
