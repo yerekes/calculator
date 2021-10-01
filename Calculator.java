@@ -8,35 +8,7 @@ public class Calculator {
         int num2 = getSecondInt();
         char operation = getOperation();
         int result = calc(num1,num2,operation);
-        System.out.println("YOur answer:"+ result);
-    }
-
-    private static int calc(int num1, int num2, char operation) {
-        int result;
-        switch (operation){
-            case '+':
-            result = num1 + num2;
-            break;
-            case '-':
-            result = num1 - num2;
-            break;
-            case '*':
-            result = num1 * num2;
-            break;
-            case '/':
-            result = num1 / num2;
-            break;
-            case '^':
-            result = num1 ^ num2;
-            break;
-            case '%':
-            result = num1 % num2;
-            break; 
-            default:
-            System.out.println("OPerciya ne raspoznanana");
-            result = calc(num1,num2,getOperation());
-        }
-        return result;
+        System.out.println("YOur answer:" + result);
     }
 
     public static int getFirstInt(){
@@ -66,7 +38,7 @@ public class Calculator {
     }
     
     public static char getOperation(){
-        System.out.println();
+        System.out.println("Choose you defenition: ");
         char operation;
         if(scanner.hasNext()){
             operation = scanner.next().charAt(0);
@@ -76,5 +48,37 @@ public class Calculator {
             System.out.println("vvedi Pravil'nee!!!");
     }
         return operation;
+    }
+
+    private static int calc(int num1, int num2, char operation) {
+        int result;
+        switch (operation){
+            case '+':
+            result = num1 + num2;
+            break;
+            case '-':
+            result = num1 - num2;
+            break;
+            case '*':
+            result = num1 * num2;
+            break;
+            case '/':
+            result = num1 / num2;
+            break;
+            case '^':
+            int a ;
+            for(int i = 0; i < n; i++){
+                result = a * result;
+            }
+            result = a * result;
+            break;
+            case '%':
+            result = num1 % num2;
+            break; 
+            default:
+            System.out.println("OPerciya ne raspoznanana");
+            result = calc(num1,num2,getOperation());
+        }
+        return result;
     }
 }
