@@ -70,7 +70,6 @@ public class Calculator {
             for(int i = 0; i < n; i++){
                 result = a * result;
             }
-            result = a * result;
             break;
             case '%':
             result = num1 % num2;
