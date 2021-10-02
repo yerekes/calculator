@@ -66,9 +66,9 @@ public class Calculator {
             result = num1 / num2;
             break;
             case '^':
-            int a ;
-            for(int i = 0; i < n; i++){
-                result = a * result;
+            int num1;
+            for(int i = 0; i < num2; i++){
+                result = num1 * result;
             }
             break;
             case '%':
