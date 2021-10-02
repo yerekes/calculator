@@ -51,7 +51,7 @@ public class Calculator {
     }
 
     private static int calc(int num1, int num2, char operation) {
-        int result;
+        int result = 1;
         switch (operation){
             case '+':
             result = num1 + num2;
@@ -66,7 +66,6 @@ public class Calculator {
             result = num1 / num2;
             break;
             case '^':
-            int num1;
             for(int i = 0; i < num2; i++){
                 result = num1 * result;
             }
