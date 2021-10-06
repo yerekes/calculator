@@ -13,11 +13,14 @@ public class Ugaday {
                 break;
             } if(vvod > ran){
                 System.out.println("Slishkom mnogo " + vvod + " chislo = " + ran);
-                //vvod--;
+                vvod = scanner.nextInt();
+                System.out.println("Choose new number");
                 break;
             } if(vvod < ran){
                 System.out.println("Slishkom malo" + vvod + " ot chisla  " + ran);
                 //vvod++;
+                vvod = scanner.nextInt();
+                System.out.println("Choose new number");
                 break;
                 }
 
