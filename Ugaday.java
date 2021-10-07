@@ -6,36 +6,31 @@ public class Ugaday {
     public static void main(String[] args) {
         int vvod = getVvodInt();
         int ran = (int) (Math.random() * 100);
-        System.out.println("Start game ");
-        while(true){
+        while(vvod == ran){
             if(vvod == ran){
                 System.out.println("You win!! " + ran);
-                break;
             } if(vvod > ran){
                 System.out.println("Slishkom mnogo " + vvod + " chislo = " + ran);
                 vvod = scanner.nextInt();
                 System.out.println("Choose new number");
-                break;
             } if(vvod < ran){
                 System.out.println("Slishkom malo" + vvod + " ot chisla  " + ran);
                 //vvod++;
                 vvod = scanner.nextInt();
                 System.out.println("Choose new number");
-                break;
                 }
-
             }  
         }
 
     public static int getVvodInt(){
-        int vvod;
-        vvod = scanner.nextInt();
         System.out.println("Choose your number");
-    
-    return vvod;
+        int vvod;
+        if(scanner.hasNextInt()){
+            vvod = scanner.nextInt();
+        } else{
+            System.out.println("Write number please ");
+            vvod =  scanner.nextInt();
+        }
+        return vvod;
     }
-
-
 }    
-    
-
