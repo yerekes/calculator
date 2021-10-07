@@ -6,7 +6,8 @@ public class Ugaday {
     public static void main(String[] args) {
         int vvod = getVvodInt();
         int ran = (int) (Math.random() * 100);
-        while(vvod == ran){
+        boolean result = vvod == ran;
+        while(result){
             if(vvod == ran){
                 System.out.println("You win!! " + ran);
             } if(vvod > ran){
