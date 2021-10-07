@@ -9,7 +9,7 @@ public class Ugaday {
         boolean result = vvod == ran;
         while(true){
             if(vvod == ran){
-                System.out.println("You win!! " + ran);
+                System.out.println("You are winneeeeeerrr!! " + ran);
                 break;
             } if(vvod > ran){
                 System.out.println("Slishkom mnogo " + vvod + " chislo = " + ran);
