@@ -7,9 +7,10 @@ public class Ugaday {
         int vvod = getVvodInt();
         int ran = (int) (Math.random() * 100);
         boolean result = vvod == ran;
-        while(result){
+        while(true){
             if(vvod == ran){
                 System.out.println("You win!! " + ran);
+                break;
             } if(vvod > ran){
                 System.out.println("Slishkom mnogo " + vvod + " chislo = " + ran);
                 vvod = scanner.nextInt();
