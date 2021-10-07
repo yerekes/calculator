@@ -16,7 +16,7 @@ public class Ugaday {
                 vvod = scanner.nextInt();
                 System.out.println("Choose new number");
             } if(vvod < ran){
-                System.out.println("Slishkom malo" + vvod + " ot chisla  " + ran);
+                System.out.println("Slishkom malo " + vvod + " ot chisla  " + ran);
                 //vvod++;
                 vvod = scanner.nextInt();
                 System.out.println("Choose new number");
